@@ -1,5 +1,3 @@
-import daisyui from 'daisyui'
-
 export default {
   content: ['./index.html', './src/**/*.{vue,js}'],
   theme: {
@@ -11,9 +9,5 @@ export default {
         'gold-gradient': 'linear-gradient(135deg,#B8860B 0%,#F4C95D 48%,#D4A72C 100%)'
       }
     }
-  },
-  daisyui: {
-    themes: [{ premium: { primary: '#174EA6', secondary: '#D4A72C', accent: '#F4C95D', neutral: '#10233F', 'base-100': '#FFFFFF', 'base-200': '#F4F7FB', 'base-300': '#E3EAF3', info: '#3B82F6', success: '#16A34A', warning: '#D97706', error: '#DC2626' } }]
-  },
-  plugins: [daisyui]
+  }
 }

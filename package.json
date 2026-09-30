@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "latest",
-    "autoprefixer": "latest",
-    "daisyui": "4.12.24",
     "postcss": "latest",
     "tailwindcss": "3.4.17",
     "vite": "latest",

@@ -11,3 +11,8 @@ PROD/*
 .DS_Store
 vps_revenda_ed25519
 vps_revenda_ed25519.pub
+pnpm-lock.yaml
+README.md
+plan.md
+ideas.md
+app.config.ts
