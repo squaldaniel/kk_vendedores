@@ -4,7 +4,7 @@ services:
   vendedores:
     build:
       context: ..
-      dockerfile: PROD/Dockerfile
+      dockerfile: ./PROD/Dockerfile
     container_name: vendedores
     restart: unless-stopped
     networks:
