@@ -3,6 +3,11 @@ dist
 .git
 .gitignore
 DEV
-PROD
+PROD/*
+!PROD/nginx.conf
+!PROD/Dockerfile
+!PROD/docker-compose.yml
 *.log
 .DS_Store
+vps_revenda_ed25519
+vps_revenda_ed25519.pub
