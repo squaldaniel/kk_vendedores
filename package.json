@@ -1,0 +1,22 @@
+{
+  "name": "vendemais",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.12.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 3000"
+  },
+  "dependencies": {
+    "@vitejs/plugin-vue": "latest",
+    "autoprefixer": "latest",
+    "daisyui": "4.12.24",
+    "postcss": "latest",
+    "tailwindcss": "3.4.17",
+    "vite": "latest",
+    "vue": "latest"
+  },
+  "devDependencies": {}
+}
