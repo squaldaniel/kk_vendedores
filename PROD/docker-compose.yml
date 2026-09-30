@@ -1,27 +1,31 @@
-version: '3.8'
+name: vendedores-prod
 
 services:
   vendedores:
     build:
       context: ..
-      dockerfile: ./PROD/Dockerfile
+      dockerfile: PROD/Dockerfile
     container_name: vendedores
     restart: unless-stopped
     networks:
-      - internal
+      - vendedores-prod
       - proxy
     labels:
-      - "traefik.enable=true"
-      - "traefik.docker.network=proxy"
-      - "traefik.http.routers.vendedores.rule=Host(`vendedores.fullengineer.com.br`)"
-      - "traefik.http.routers.vendedores.entrypoints=websecure"
-      - "traefik.http.routers.vendedores.tls.certresolver=letsencrypt"
-      - "traefik.http.services.vendedores.loadbalancer.server.port=80"
+      - traefik.enable=true
+      - traefik.docker.network=proxy
+      - traefik.http.routers.vendedores.rule=Host(`vendedores.fullengineer.com.br`)
+      - traefik.http.routers.vendedores.entrypoints=web
+      - traefik.http.routers.vendedores.middlewares=vendedores-https
+      - traefik.http.middlewares.vendedores-https.redirectscheme.scheme=https
+      - traefik.http.routers.vendedores-secure.rule=Host(`vendedores.fullengineer.com.br`)
+      - traefik.http.routers.vendedores-secure.entrypoints=websecure
+      - traefik.http.routers.vendedores-secure.tls=true
+      - traefik.http.routers.vendedores-secure.tls.certresolver=cloudflare
+      - traefik.http.services.vendedores.loadbalancer.server.port=80
 
 networks:
-  internal:
-    external: true
-    name: internal
+  vendedores-prod:
+    driver: bridge
   proxy:
     external: true
     name: proxy
