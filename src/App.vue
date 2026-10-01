@@ -7,10 +7,7 @@ const openFaq = ref(0)
 const benefits = [
   ['fa-solid fa-coins', 'R$ 100 por venda', 'Comissão definida para cada venda validada por meio da sua atuação. recebimento em até 24hs, independente da quantidade de vendas.'],
   ['fa-solid fa-gift', 'Bônus a cada 5 vendas', 'Parabenizamos seus esforços com bonificações adicionais a cada 5 vendas. R$ 200 a mais como bônus.'],
-  ['fa-solid fa-graduation-cap', 'Treinamento completo', 'Produto, funil e técnicas de argumentação para vender com clareza. Como usar IA´s gratuitas, as ferramentas e links de venda e de desconto.'],
-  ['fa-solid fa-toolbox', 'Estrutura para vender', 'Materiais, ferramentas e recursos para organizar sua rotina comercial.'],
-  ['fa-solid fa-chart-line', 'Acompanhe seu desempenho', 'Consulte suas vendas e tenha mais clareza sobre a sua evolução.'],
-  ['fa-solid fa-rocket', 'Conhecimento aplicável', 'Técnicas que podem ser adaptadas a outros produtos e mercados.']
+  ['fa-solid fa-graduation-cap', 'Treinamento completo', 'Produto, funil e técnicas de argumentação para vender com clareza. Como usar IA´s gratuitas, as ferramentas e links de venda e de desconto.']
 ]
 const modules = [
   ['01', 'Conheça o produto', 'Entenda a proposta da mentoria, seus benefícios, público e diferenciais.'],
