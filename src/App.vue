@@ -52,7 +52,7 @@ const ideal = [
 ]
 
 const notIdeal = [
-  'Procura renda garantida ou dinheiro fácil.',
+  'Procura renda garantida.',
   'Pretende enviar spam ou fazer promessas falsas aos clientes.',
   'Não quer prospectar ou não tem disposição para aprender.',
   'Quer manipular potenciais clientes ao invés de informar com clareza.'
@@ -307,14 +307,14 @@ const notIdeal = [
                 Tudo organizado para que você foque no que realmente importa: encontrar pessoas com interesse na solução.
               </p>
               <div class="mt-8 grid gap-3 sm:grid-cols-2">
-                <div v-for="text in ['Treinamento completo em vídeo', 'Painel do vendedor', 'Materiais comerciais prontos', 'Scripts e respostas para objeções', 'Ferramentas e IA', 'Suporte oficial']" :key="text" class="flex items-start gap-3 text-sm leading-6 text-slate-700">
+                <div v-for="text in ['Treinamento', 'Materiais comerciais', 'Scripts e respostas para objeções']" :key="text" class="flex items-start gap-3 text-sm leading-6 text-slate-700">
                   <i class="fa-solid fa-circle-check mt-0.5 text-base text-[#174EA6]" aria-hidden="true"></i>
                   <span>{{ text }}</span>
                 </div>
               </div>
               <div class="mt-8 rounded-2xl border-l-4 border-[#F4C95D] bg-[#F4F7FB] p-5">
                 <p class="text-sm leading-7 font-medium text-[#10233F]">
-                  "Eu não preciso criar um produto, desenvolver uma plataforma ou dominar programação. A estrutura está pronta para eu me concentrar em encontrar quem precisa da solução."
+                  "A estrutura está pronta para você se concentrar em encontrar quem precisa da solução."
                 </p>
               </div>
             </div>
@@ -322,15 +322,6 @@ const notIdeal = [
               <div class="absolute -inset-4 rounded-[2.5rem] bg-blue-900/10 blur-2xl"></div>
               <div class="relative overflow-hidden rounded-[2.5rem] border border-slate-200 bg-[#10233F] p-2 shadow-xl">
                 <img :src="dashboardImg" alt="Painel de vendas sendo utilizado em laptop" class="h-[360px] w-full rounded-[2rem] object-cover opacity-90 lg:h-[440px]" loading="lazy" />
-                <div class="absolute bottom-6 left-6 right-6 rounded-2xl border border-white/20 bg-[#10233F]/95 p-5 text-white backdrop-blur">
-                  <div class="flex items-center justify-between">
-                    <span class="text-xs font-bold uppercase tracking-[0.16em] text-blue-200">Painel do Vendedor</span>
-                    <span class="rounded-full bg-emerald-400/20 px-3 py-1 text-xs font-bold text-emerald-300">Em tempo real</span>
-                  </div>
-                  <div class="mt-5 flex items-end justify-between gap-2">
-                    <div v-for="n in [40, 55, 48, 72, 65, 88]" :key="n" class="flex-1 rounded-t-xl bg-gradient-to-t from-[#174EA6] to-[#F4C95D] transition-all" :style="{ height: n + 'px' }"></div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
